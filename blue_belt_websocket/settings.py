@@ -72,7 +72,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'blue_belt_websocket.wsgi.application'
 
-ASGI_APPLICATION = "myproject.asgi.application"
+ASGI_APPLICATION = "blue_belt_websocket.asgi.application"
 
 
 

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello Blue Belt</title>
+</head>
+<body>
+    <h1>Hello Blue Belt</h1>
+    <script>
+        const socket = new WebSocket('ws://' + window.location.host + '/ws/message/');
+
+        socket.onmessage = function(event) {
+            const data = JSON.parse(event.data);
+            console.log(data.message);
+        };
+    </script>
+</body>
+</html>
